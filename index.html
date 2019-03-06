@@ -7,7 +7,7 @@
     Frontier Realty
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+  <meta name="description" content="Write information about Frontier Realty here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
   <link
     rel="canonical"
     href="http://localhost:4000/"
@@ -53,7 +53,6 @@
     type="text/css"
   />
 </head>
-
 
   <body data-spy="scroll" data-target=".fixed-top" id="page-top" class="index">
     <!-- Navigation -->
@@ -122,19 +121,6 @@
     </ul>
   </div>
 </nav>
-
-<!-- Header -->
-<!--
-        
-          
-        
-          
-        
-          
-        
-          
-        
- -->
  <!-- Carousel-->
 <section id="carousel">
   
@@ -608,25 +594,37 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Contact Us</h2>
+        <h2 class="section-heading">Contact</h2>
+
         <h3 class="section-subheading text-muted">
           Thank you for visiting our site! <br />
           If you would like for our office to reach out regarding to any
           question or concern, please fill out the form below. <br />
-          If this is an urgent matter, please give us a call at: <br />
         </h3>
-        <div class="row contact-row">
-          
-          <span class="fa-stack fa-1x">
-            <i class="fa fa-phone fa-stack-1x"> </i>
-          </span>
-          <a class="text-secondary" href="tel:7143605098">
-            714-360-5098
-          </a>
-          
-        </div>
+
+        <h5>Office Address</h5>
+        
+
+        8405 Westminster Blvd
+        Westminster, CA 92683
+        <br />
+
+        <a href="http://maps.google.com/?q=8405 Westminster Blvd, Westminster, CA 92683"
+          >Direction</a
+        >
+        
+        <h5>Direct Phone</h5>
+        
+        <span class="fa-stack fa-1x">
+          <i class="fa fa-phone fa-stack-1x"> </i>
+        </span>
+        <a class="text-secondary" href="tel:7143605098">
+          714-360-5098
+        </a>
+        
       </div>
     </div>
+
     <div class="col-lg-12">
       <form action="https://formspree.io/timsters93@gmail.com" method="POST">
         <div class="form-group">
@@ -686,16 +684,6 @@
     </div>
   </div>
 </section>
-
-<!--
-  <form action="https://formspree.io/timsters93@gmail.com" method="POST">
-    <input id="name" type="text" name="name" />
-    <input id="phone" type="number" name="phone" />
-    <input id="email" type="email" name="_replyto" />
-    <input id="details" type="text" name="details" />
-    <input id="submitForm" type="submit" value="Send" />
-  </form>
--->
  <!-- jQuery Version 1.11.0 -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -703,7 +691,7 @@
 <!-- Slick carousel Scripts-->
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js" | prepend: site.baseurl ></script>
 
 <!-- Plugin JavaScript -->
 <script src="/js/jquery.easing.min.js"></script>
@@ -717,14 +705,22 @@
 <script src="/js/bootstrap.js"></script>
 
 
-
-<!-- <script src="/js/cbpAnimatedHeader.js"></script> -->
-
-<!-- Contact Form JavaScript -->
-<!-- <script src="/js/jqBootstrapValidation.js"></script> -->
-
 <!-- Custom Theme JavaScript -->
 <script src="/js/frontier.js"></script>
-<script src="/js/slick.js"></script>
+<script src="/js/slick.js"></script> <!-- Footer Section -->
+<section id="frontier-footer">
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright"
+            >Copyright &copy; Frontier Realty 2019</span
+          >
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+
   </body>
 </html>
