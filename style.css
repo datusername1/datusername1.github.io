@@ -229,13 +229,15 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar {
   border-color: transparent;
-  background-color: #222;
+  background-color: #222 !important;
+  position: sticky !important;
+  top: 0;
 }
 
 .navbar .navbar-brand {
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   /* font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; */
-  color: #007cdc;
+  color: #222;
   padding: 15px;
 }
 
@@ -271,7 +273,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar .navbar-nav li a {
   text-transform: uppercase;
   font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 1px;
   color: #fff;
   -webkit-transition: all ease 0.35s;
