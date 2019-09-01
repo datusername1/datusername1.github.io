@@ -1,0 +1,210 @@
+/* 
+  custom vars to help with responsiveness
+  All will be compiled into styles.css
+*/
+/* All Grids */
+/* Breakpoints */
+/* Grid mixins */
+/* colors, fonts, size */
+.container {
+  display: block;
+  margin: auto; }
+  @media (min-width: 0px) {
+    .container {
+      width: 375px;
+      max-width: 100%; } }
+  @media (min-width: 768px) {
+    .container {
+      width: 720px;
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 960px;
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1140px;
+      max-width: 1140px; } }
+
+.row {
+  display: block;
+  margin: auto;
+  padding: 0 15px; }
+  @media (min-width: 768px) {
+    .row {
+      width: 720px;
+      max-width: 720px;
+      padding: 0; } }
+
+.col {
+  padding: 0 15px; }
+
+#main-content {
+  /* material content css */
+  /* 
+    To render the content to be 
+    towards mid
+    of the screen 
+  */ }
+  #main-content #tabs {
+    list-style-type: none;
+    padding: 0; }
+    #main-content #tabs .tab {
+      text-align: center;
+      width: 182px;
+      border: solid 1px #000;
+      transition: all 0.3s ease; }
+      #main-content #tabs .tab a {
+        display: inline-block;
+        font-size: 0.94em;
+        font-weight: 600;
+        color: #000;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 100%;
+        padding: 10px 0;
+        cursor: pointer;
+        transition: all 0.3s ease; }
+    #main-content #tabs .active {
+      background-color: #000;
+      transition: all 0.3s ease; }
+      #main-content #tabs .active a {
+        color: #fff; }
+    @media (min-width: 0px) {
+      #main-content #tabs {
+        width: 375px;
+        max-width: 100%;
+        display: none; } }
+    @media (min-width: 768px) {
+      #main-content #tabs {
+        width: 720px;
+        max-width: 720px;
+        display: flex;
+        justify-content: center;
+        width: 690px;
+        margin: auto; } }
+  #main-content #accordion-wrapper {
+    display: block;
+    margin: auto; }
+    #main-content #accordion-wrapper .accordion {
+      border-bottom: solid 1px #000; }
+      @media (min-width: 768px) {
+        #main-content #accordion-wrapper .accordion {
+          width: 720px;
+          max-width: 720px;
+          border-bottom: none;
+          width: 690px; } }
+    #main-content #accordion-wrapper .label-title {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      cursor: pointer; }
+      #main-content #accordion-wrapper .label-title label {
+        font-size: 0.94em;
+        font-weight: 600;
+        color: #000; }
+      #main-content #accordion-wrapper .label-title:after {
+        content: '\002B';
+        font-size: 0.94em;
+        color: #000;
+        font-weight: 600; }
+      @media (min-width: 768px) {
+        #main-content #accordion-wrapper .label-title {
+          width: 720px;
+          max-width: 720px;
+          display: none; } }
+    #main-content #accordion-wrapper .active {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center; }
+      #main-content #accordion-wrapper .active:after {
+        content: '\2212 ';
+        font-size: 0.94em;
+        color: #000;
+        font-weight: 700; }
+      @media (min-width: 768px) {
+        #main-content #accordion-wrapper .active {
+          width: 720px;
+          max-width: 720px;
+          display: none; } }
+    #main-content #accordion-wrapper .panel {
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: all 0.5s ease;
+      opacity: 0; }
+      #main-content #accordion-wrapper .panel p {
+        display: none;
+        font-size: 0.9em;
+        text-align: center; }
+    #main-content #accordion-wrapper .active-mobile {
+      display: block;
+      max-height: 800px;
+      transition: max-height 1s ease;
+      opacity: 1; }
+      #main-content #accordion-wrapper .active-mobile p {
+        display: block; }
+    #main-content #accordion-wrapper .active-others {
+      display: block;
+      max-height: 100%;
+      opacity: 1;
+      transition: all 0.5s ease; }
+      #main-content #accordion-wrapper .active-others p {
+        display: block; }
+    @media (min-width: 768px) {
+      #main-content #accordion-wrapper {
+        width: 720px;
+        max-width: 720px;
+        margin: 30px auto 17px; } }
+  #main-content label {
+    font-size: 2em;
+    text-transform: uppercase; }
+    @media (min-width: 768px) {
+      #main-content label {
+        width: 720px;
+        max-width: 720px;
+        display: none; } }
+  #main-content #materials #material-stats {
+    display: block;
+    text-align: center;
+    margin: auto; }
+    #main-content #materials #material-stats .material {
+      display: inline-block;
+      text-align: center;
+      padding: 0 15px; }
+      @media (min-width: 768px) {
+        #main-content #materials #material-stats .material {
+          width: 720px;
+          max-width: 720px;
+          width: 158px;
+          padding: 0; } }
+      #main-content #materials #material-stats .material p {
+        color: #000;
+        font-size: 2.27em;
+        margin: 0; }
+      #main-content #materials #material-stats .material span {
+        color: #000;
+        font-size: 1.16em;
+        text-transform: lowercase; }
+      #main-content #materials #material-stats .material:nth-child(2) {
+        padding-bottom: 20px;
+        border-bottom: solid 1px #000; }
+    @media (min-width: 768px) {
+      #main-content #materials #material-stats {
+        width: 720px;
+        max-width: 720px;
+        width: 547px; } }
+  @media (min-width: 768px) {
+    #main-content {
+      width: 720px;
+      max-width: 720px;
+      margin-top: 100px; } }
+
+html {
+  font-size: 18px; }
